@@ -67,7 +67,8 @@ ssh user@internal-ip-address
     ```bash
     sudo smbpasswd -a johnsmith
     ```
-        * If you would like to change the Samba password use the below command:
+
+    * If you would like to change the Samba password use the below command:
         ```bash
         sudo smbpasswd johnsmith
         ```
