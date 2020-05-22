@@ -22,6 +22,8 @@ Click [here](#ExFat-Compatability) to see instructions for allowing the pi to re
 
 Under Construction.
 
+Click [here](#Install-Anki) to see instruction for this.
+
 # How To
 
 ## SSH Into The Pi
