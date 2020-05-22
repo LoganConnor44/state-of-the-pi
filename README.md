@@ -18,6 +18,10 @@ Click [here](#Samba-Share) to see instruction for this.
 
 Click [here](#ExFat-Compatability) to see instructions for allowing the pi to read my ExFat External Harddrive.
 
+## Anki Server
+
+Under Construction.
+
 # How To
 
 ## SSH Into The Pi
@@ -122,3 +126,31 @@ I followed a [tutorial](https://pimylifeup.com/raspberry-pi-exfat/) for this and
     ```
     UUID=your-uuid-here-this-needs-to-be-updated /media/exfat exfat defaults,auto,umask=000,users,rw 0 0
     ```
+
+## Install Anki
+
+1. Navigate To The Website And Find Their Download URL
+
+2. CD Into The Download Directory And Download
+
+```bash
+wget https://github.com/ankitects/anki/releases/download/2.1.26/anki-2.1.26-linux-amd64.tar.bz2
+```
+
+3. Build The Tar File
+```bash
+tar xjf ./anki-2.1.26-linux-amd64.tar.bz2
+```
+
+4. Change Directories And Make
+```bash
+cd anki-2.1.26-linux-amd64
+sudo make install
+```
+
+5. Clean Up 
+
+```bash
+cd ..
+rm anki-2.1.26-linux-amd64.tar.bz2 
+```
