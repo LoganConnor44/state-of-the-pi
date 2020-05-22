@@ -6,7 +6,7 @@ Raspberry Pi Noobs
 
 ## Plex Server
 
-I didn't perform any crazy setup to get Plex up and running. The complication was truly the permissions and Samba Share orchestration. I believe the permission roles are crazy right now because of this. It's probably best to refresh this server and rely only on samba share to give the user, `plex` the ability to view media files.
+I didn't perform any crazy setup to get Plex up and running. The complication was truly the permissions and Samba Share orchestration. I believe the permission roles are crazy right now because of this. It's probably best to refresh this server and rely only on samba share to give the user, `plex`, the ability to view media files.
 
 Now that I'm thinking about it, I do think I set the pi to have a static internal ip address. I don't remember how this was done and I did this before thinking about saving these kind of setup processes. I'll have to find this again the next refresh and post it here.
 
@@ -23,9 +23,13 @@ Click [here](#ExFat-Compatability) to see instructions for allowing the pi to re
 ## SSH Into The Pi
 
 I'm not sure how, but `raspberrypi.local` is a godsend and is magic that I encountered on a forum one day.
+
+*actual*
 ```bash
 ssh pi@raspberrypi.local
 ```
+
+*template*
 ```bash
 ssh user@internal-ip-address
 ```
