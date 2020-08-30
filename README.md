@@ -10,6 +10,16 @@ I didn't perform any crazy setup to get Plex up and running. The complication wa
 
 Now that I'm thinking about it, I do think I set the pi to have a static internal ip address. I don't remember how this was done and I did this before thinking about saving these kind of setup processes. I'll have to find this again the next refresh and post it here.
 
+### Start, Stop, And Restart
+
+```bash
+sudo service plexmediaserver start 
+
+sudo service plexmediaserver stop
+
+sudo service plexmediaserver restart
+```
+
 ## Samba Share Orchestrator
 
 Allows an external harddrive to be accessible via the local network. I'm keeping mainly movies and videos on here, but previously computer file dumps are also on here. 
