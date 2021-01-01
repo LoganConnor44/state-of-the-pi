@@ -170,6 +170,8 @@ dtoverlay=disable-bt
 
 ## Static IP Address
 
+### Raspberry Pi
+
 Currently, the Raspberry Pi is assigned to a single IP address. This was achieved by adding the following lines to the `/etc/dhcpcd.conf` file.
 
 ```bash
@@ -178,3 +180,9 @@ static ip_address=192.168.1.2
 static routers=192.168.1.1
 static domain_name_servers=192.168.1.1
 ```
+
+### Netgear Router
+
+The router needs to also know to not assign this ip address dynamically. This was set by navigating to 
+
+Advanced > Setup > LAN Setup
