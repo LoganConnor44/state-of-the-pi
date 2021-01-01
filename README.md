@@ -156,3 +156,25 @@ sudo make install
 cd ..
 rm anki-2.1.26-linux-amd64.tar.bz2 
 ```
+
+# Configurations
+
+## Wifi & Bluetooth
+
+Currently the onboard wifi and bluetooth is disabled. This was done by adding the following lines to the `/boot/config.txt` file.
+
+```bash
+dtoverlay=disable-wifi
+dtoverlay=disable-bt
+```
+
+## Static IP Address
+
+Currently, the Raspberry Pi is assigned to a single IP address. This was achieved by adding the following lines to the `/etc/dhcpcd.conf` file.
+
+```bash
+interface eth0
+static ip_address=192.168.1.2
+static routers=192.168.1.1
+static domain_name_servers=192.168.1.1
+```
