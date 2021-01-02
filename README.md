@@ -203,3 +203,4 @@ VNC Server is installed and must be started before attempting to connect from a 
 ```bash
 vncserver :1
 ```
+There is a separate password for connecting into the VNC Server. Use your dynamic password.
