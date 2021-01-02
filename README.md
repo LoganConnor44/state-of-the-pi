@@ -196,3 +196,10 @@ static domain_name_servers=192.168.1.1
 The router needs to also know to not assign this ip address dynamically. This was set by navigating to 
 
 Advanced > Setup > LAN Setup
+
+# Remote Desktop
+
+VNC Server is installed and must be started before attempting to connect from a client, such as VNC Viewer. The command to start the server is as followed:
+```bash
+vncserver :1
+```
